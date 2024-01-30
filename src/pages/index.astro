@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import "../styles/pages/index.scss";
 import ProductCard from "../components/ProductCard";
+import Services from "../components/Services";
 ---
 
 <Layout title="Home">
@@ -12,19 +13,19 @@ import ProductCard from "../components/ProductCard";
       </h1>
       <h5 class="text-3xl font-bold">Welcome This Season with 50% OFF</h5>
     </div>
-    <button class="bg-white px-5 py-2 rounded-xl font-semibold">Shop Now</button
+    <button class="bg-white px-5 py-2 rounded-xl font-bold">Shop Now</button
     >
   </div>
-  <div class="px-28 py-6">
+  <div class="px-28 pt-6">
     <h1 class="text-3xl font-bold pb-1 border-b-2 border-black w-fit mb-4">
       OUR PRODUCTS
     </h1>
-    <div class="flex gap-10 flex-wrap">
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
+    <div class="grid grid-cols-5 gap-4">
+      <ProductCard imgSrc='/images/product-images/img-1.jpg' name="Vases" desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"/>
+      <ProductCard imgSrc='/images/product-images/img-2.jpg' name="Home Decor" desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"/>
+      <ProductCard imgSrc='/images/product-images/img-6.jpg' name="Kitchenware" desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"/>
+      <ProductCard imgSrc='/images/product-images/img-4.jpg' name="Candle Holders" desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"/>
+      <ProductCard imgSrc='/images/product-images/img-5.jpg' name="Vases" desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"/>
     </div>
   </div>
   <div class="intro-wrapper relative">
@@ -39,13 +40,19 @@ import ProductCard from "../components/ProductCard";
       <div class="flex gap-8 text-center">
         <div class="">
           <div class="text-3xl font-bold">15+</div>
-          <div class="text-xl font-medium">Years of Experience</div>
+          <div class="text-xl">Years of Experience</div>
         </div>
         <div class="">
           <div class="text-3xl font-bold">98%</div>
-          <div class="text-xl font-medium">Happy Clients</div>
+          <div class="text-xl">Happy Customer</div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="grid grid-cols-4 gap-16 px-28 bg-stone-200 mb-8 p-8">
+    <Services title="24H Service" desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"/>
+    <Services title="Free Returns" desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"/>
+    <Services title="Secure Payment" desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"/>
+    <Services title="Free Shipping" desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"/>
   </div>
 </Layout>

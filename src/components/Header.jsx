@@ -7,9 +7,9 @@ const Header = () => {
               <a href="/">Ceramiza</a>
           </div>
           <div className="flex gap-14 font-medium">
-              <a href="/">ABOUT</a>
-              <a href="/">FAQ</a>
-              <a href="/">CONTACT US</a>
+              <a href="/products">PRODUCTS</a>
+              <a href="/faq">FAQ</a>
+              <a href="/contactUs">CONTACT US</a>
           </div>
       </div>
   );
