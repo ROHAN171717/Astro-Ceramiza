@@ -5,36 +5,47 @@ import ProductCard from "../components/ProductCard";
 ---
 
 <Layout title="Home">
-    <div class="section-wrapper flex flex-col items-center gap-4">
-        <div class="mt-12 text-white text-center">
-            <h1 class="text-6xl font-extrabold mb-4">Every Touch Has Its Own Feelings</h1>
-            <h5 class="text-3xl font-bold">Welcome This Season with 50% OFF</h5>
-        </div>
-        <button class="bg-white px-5 py-2 rounded-xl font-semibold">Shop Now</button>
+  <div class="section-wrapper flex flex-col items-center gap-4">
+    <div class="mt-12 text-white text-center">
+      <h1 class="text-6xl font-extrabold mb-4">
+        Every Touch Has Its Own Feelings
+      </h1>
+      <h5 class="text-3xl font-bold">Welcome This Season with 50% OFF</h5>
     </div>
-    <div class="px-28 py-6">
-        <h1 class="text-3xl font-bold pb-1 border-b-2 border-black w-fit mb-4">OUR PRODUCTS</h1>
-        <div class="flex gap-10 flex-wrap">
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-        </div>
+    <button class="bg-white px-5 py-2 rounded-xl font-semibold">Shop Now</button
+    >
+  </div>
+  <div class="px-28 py-6">
+    <h1 class="text-3xl font-bold pb-1 border-b-2 border-black w-fit mb-4">
+      OUR PRODUCTS
+    </h1>
+    <div class="flex gap-10 flex-wrap">
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
     </div>
-    <div class="intro-wrapper relative">
-        <div class="w-2/5 absolute ml-28 img-text flex flex-col gap-6">
-            <div class="text-6xl font-bold text-black">Turning mud into something amazing</div>
-            <div class="text-xl text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
-                pulvinar dapibus leo.
-            </div>
-            <div>
-                <div>
-                    <div>15+</div>
-                    <div>Years of Experience</div>
-                </div>
-            </div>
+  </div>
+  <div class="intro-wrapper relative">
+    <div class="w-2/5 absolute ml-28 img-text flex flex-col gap-6">
+      <div class="text-6xl font-bold text-black">
+        Turning mud into something amazing
+      </div>
+      <div class="text-xl text-black">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+        luctus nec ullamcorper mattis, pulvinar dapibus leo.
+      </div>
+      <div class="flex gap-8 text-center">
+        <div class="">
+          <div class="text-3xl font-bold">15+</div>
+          <div class="text-xl font-medium">Years of Experience</div>
         </div>
+        <div class="">
+          <div class="text-3xl font-bold">98%</div>
+          <div class="text-xl font-medium">Happy Clients</div>
+        </div>
+      </div>
     </div>
+  </div>
 </Layout>
