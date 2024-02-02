@@ -3,9 +3,9 @@ import "../styles/components/ProductCard.scss";
 
 const ProductCard = ({ imgSrc, name, desc }) => {
     return (
-        <div className="product-card-wrapper relative w-fit ">
+        <div className="product-card-wrapper relative w-80">
             <img src={imgSrc} alt="demo" className="rounded"/>
-            <div className="absolute text-center w-full img-text">
+            <div className="absolute text-center w-full img-text p-1">
                 <h1 className="text-xl font-bold">{name}</h1>
                 <div className="text-lg">{desc}</div>
                 <button className="border-2 border-black px-2 py-1 rounded font-bold mt-2">View Products</button>
