@@ -1,13 +1,83 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import '../styles/pages/products.scss';
+import Banner from "../components/Banner";
+import DetailedProductCard from "../components/DetailedProductCard";
 ---
 
 <Layout title="Home">
-    <div class="section-wrapper">
-        <div class="absolute img-text">
-            <div class="w-fit font-semibold text-1 mb-2">SHOP</div>
-            <div class="w-fit font-bold text-2">SHOP FOR CERAMIC EQUIPMENT WITH A SATISFIED ONLY IN CERAMIZA</div>
+    <div class="section-wrapper mx-28 mt-16">
+        <Banner title="SHOP" desc="GET CERAMIC PRODUCTS WITH THE BEST QUALITY & PRICE" variant="img-1"/>
+        <div>
+            <DetailedProductCard info={
+                {
+                    name: "Vase Flower Minimal",
+                    price: "$25.00",
+                    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a feugiat purus condimentum metus duis turpis nunc aliquam idnuncac convallis dictum nisi. Nullam posuere nibh non eros lobortis tempus maecenas dignissim',
+                    sku: "PTR112",
+                    categories: "Bowl, Cutlery",
+                    imgSrc: "/images/product-images/img-15.png"
+                }
+            }/>
+            <DetailedProductCard info={
+                {
+                    name: "Chinese Ceramic Bowl",
+                    price: "$34.00",
+                    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a feugiat purus condimentum metus duis turpis nunc aliquam idnuncac convallis dictum nisi. Nullam posuere nibh non eros lobortis tempus maecenas dignissim',
+                    sku: "PTR112",
+                    categories: "Bowl, Cutlery",
+                    imgSrc: "/images/product-images/img-16.png"
+                }
+            }/>
+            <DetailedProductCard info={
+                {
+                    name: "Chinese Cutlery",
+                    price: "$30.00",
+                    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a feugiat purus condimentum metus duis turpis nunc aliquam idnuncac convallis dictum nisi. Nullam posuere nibh non eros lobortis tempus maecenas dignissim',
+                    sku: "PTR112",
+                    categories: "Bowl, Cutlery",
+                    imgSrc: "/images/product-images/img-17.jpg"
+                }
+            }/>
+            <DetailedProductCard info={
+                {
+                    name: "Mini Moroccan Ceramic",
+                    price: "$45.00",
+                    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a feugiat purus condimentum metus duis turpis nunc aliquam idnuncac convallis dictum nisi. Nullam posuere nibh non eros lobortis tempus maecenas dignissim',
+                    sku: "PTR112",
+                    categories: "Bowl, Cutlery",
+                    imgSrc: "/images/product-images/img-18.jpg"
+                }
+            }/>
+            <DetailedProductCard info={
+                {
+                    name: "Mug Black Cloud",
+                    price: "$20.00",
+                    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a feugiat purus condimentum metus duis turpis nunc aliquam idnuncac convallis dictum nisi. Nullam posuere nibh non eros lobortis tempus maecenas dignissim',
+                    sku: "PTR112",
+                    categories: "Bowl, Cutlery",
+                    imgSrc: "/images/product-images/img-19.jpg"
+                }
+            }/>
+            <DetailedProductCard info={
+                {
+                    name: "Mini Box Jewelry",
+                    price: "$54.00",
+                    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a feugiat purus condimentum metus duis turpis nunc aliquam idnuncac convallis dictum nisi. Nullam posuere nibh non eros lobortis tempus maecenas dignissim',
+                    sku: "PTR112",
+                    categories: "Bowl, Cutlery",
+                    imgSrc: "/images/product-images/img-20.png"
+                }
+            }/>
+            <DetailedProductCard info={
+                {
+                    name: "Sake Jar Ripple",
+                    price: "$24.00",
+                    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a feugiat purus condimentum metus duis turpis nunc aliquam idnuncac convallis dictum nisi. Nullam posuere nibh non eros lobortis tempus maecenas dignissim',
+                    sku: "PTR112",
+                    categories: "Bowl, Cutlery",
+                    imgSrc: "/images/product-images/img-21.png"
+                }
+            }/>
         </div>
     </div>
 </Layout>

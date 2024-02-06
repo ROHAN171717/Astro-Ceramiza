@@ -1,14 +1,25 @@
 .section-wrapper {
-  background: url("/images/pottery.jpg") no-repeat center;
+  padding-top: 69px;
+  .bg-img {
+    background: url("/images/homeBanner.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
-  height: calc(100vh - 68px);
-  padding-top: 68px;
+  height: calc(100vh - 69px);
+  filter: blur(1px);
+  }
+
+  .img-text {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 150px;
+
+  }
 }
 
 .intro-wrapper {
   margin: 7rem;
-  background: url("/images/product-images/img-6.jpg") no-repeat center;
+  background: url("/images/product-images/img-13.jpg") no-repeat center;
   background-size: cover;
   height: 500px;
 

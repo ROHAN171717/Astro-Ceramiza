@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Banner from "../components/Banner";
+---
+
+<Layout title="Contact">
+    <div class="section-wrapper mx-28 mt-16">
+        <Banner title="CONTACT" desc="WE ARE ALWAYS THERE FOR YOU DON'T HESITATE TO CONTACT US" variant="img-3" />
+        <div class="flex py-8">
+            <div class="w-1/2">
+                <div class="tracking-widest mb-2 font-semibold" style="color: red;">GOT ANY QUESTIONS?</div>
+                <h1 class="text-3xl font-medium pb-4 border-b-2 border-stone-800 w-fit mb-4">GET IN TOUCH</h1>
+                <div class="flex flex-col gap-3">
+                    <div class="font-bold">Arizona</div>
+                    <div>9962 Oxford Sr. Auburn Street, NY 13021</div>
+                    <div>+012 5421 1187</div>
+                    <div>ceramiza@info.com</div>
+                </div>
+            </div>
+            <div class="w-1/2">
+                <form class="">
+                    <div class="w-full flex flex-col mb-4">
+                        <label for="name" class="font-bold text-lg">Name</label>
+                        <input type="text" name="name" class="border-2 border-black rounded p-1 px-2" />
+                    </div>
+                    <div class="w-full flex flex-col mb-4">
+                        <label for="email" class="font-bold text-lg">Email</label>
+                        <input type="email" name="email" class="border-2 border-black rounded p-1 px-2" />
+                    </div>
+                    <div class="w-full flex flex-col mb-4">
+                        <label for="message" class="font-bold text-lg">Message</label>
+                        <textarea name="message" rows="4" class="border-2 border-black rounded p-1 px-2"></textarea>
+                    </div>
+                    <button class="bg-black text-white px-5 py-2 mt-2 rounded text-xl w-full tracking-widest"
+                        >SEND</button
+                    >
+                </form>
+            </div>
+        </div>
+    </div>
+</Layout>

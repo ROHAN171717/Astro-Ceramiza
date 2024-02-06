@@ -1,48 +1,68 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import "../styles/pages/index.scss";
 import ProductCard from "../components/ProductCard";
 import Services from "../components/Services";
 ---
 
-<Layout title="Home">
+<Layout title="Ceramiza - Home">
   <div class="section-wrapper flex flex-col items-center gap-4">
-    <div class="mt-12 text-white text-center">
-      <h1 class="text-6xl font-extrabold mb-4">
+    <div class="bg-img"></div>
+    <div class="mt-12 text-center absolute img-text font-bold">
+      <h1 class="text-6xl mb-4">
         Every Touch Has Its Own Feelings
       </h1>
-      <h5 class="text-3xl font-bold">Welcome This Season with 50% OFF</h5>
+      <h5 class="text-3xl">Welcome This Season with 50% OFF</h5>
+      <button class="bg-black text-white px-5 py-2 mt-2 rounded-xl">Shop Now</button>
     </div>
-    <button class="bg-white px-5 py-2 rounded-xl font-bold">Shop Now</button>
   </div>
   <div class="px-28 pt-6">
-    <h1 class="text-3xl font-bold pb-1 border-b-2 border-black w-fit mb-4">
+    <h1 class="text-3xl font-medium pb-4 border-b-2 border-stone-800 w-fit mb-4">
       OUR PRODUCTS
     </h1>
-    <div class="grid grid-cols-5 gap-4">
+    <div class="grid gird-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       <ProductCard
-        imgSrc="/images/product-images/img-1.jpg"
-        name="Vases"
+        imgSrc="/images/product-images/img-8.jpg"
+        name="Pottery Vase"
         desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
       />
       <ProductCard
-        imgSrc="/images/product-images/img-2.jpg"
-        name="Home Decor"
+        imgSrc="/images/product-images/img-9.jpg"
+        name="Custome Gucci"
         desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
       />
       <ProductCard
-        imgSrc="/images/product-images/img-6.jpg"
-        name="Kitchenware"
+        imgSrc="/images/product-images/img-10.jpg"
+        name="Handmade Vase"
         desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
       />
       <ProductCard
-        imgSrc="/images/product-images/img-4.jpg"
-        name="Candle Holders"
+        imgSrc="/images/product-images/img-11.jpg"
+        name="Art Plate Ceramic"
         desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
       />
       <ProductCard
-        imgSrc="/images/product-images/img-5.jpg"
-        name="Vases"
+        imgSrc="/images/product-images/img-12.jpg"
+        name="Ocean Plate"
+        desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
+      />
+      <ProductCard
+        imgSrc="/images/product-images/img-15.png"
+        name="Vase Flower Minimal"
+        desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
+      />
+      <ProductCard
+        imgSrc="/images/product-images/img-16.png"
+        name="Chinese Ceramic Bowl"
+        desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
+      />
+      <ProductCard
+        imgSrc="/images/product-images/img-20.png"
+        name="Mini Box Jewelry"
+        desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
+      />
+      <ProductCard
+        imgSrc="/images/product-images/img-21.png"
+        name="Sake Jar Ripple"
         desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
       />
     </div>
@@ -57,18 +77,22 @@ import Services from "../components/Services";
         luctus nec ullamcorper mattis, pulvinar dapibus leo.
       </div>
       <div class="flex gap-8 text-center">
-        <div class="">
+        <div>
           <div class="text-3xl font-bold">15+</div>
           <div class="text-xl">Years of Experience</div>
         </div>
-        <div class="">
+        <div>
           <div class="text-3xl font-bold">98%</div>
           <div class="text-xl">Happy Customer</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold">1000+</div>
+          <div class="text-xl">Products Sold</div>
         </div>
       </div>
     </div>
   </div>
-  <div class="grid grid-cols-4 gap-16 px-28 bg-stone-200 mb-8 p-8">
+  <div class="grid grid-cols-4 gap-16 px-28 mb-8 p-8" style="background-color: #ECE8E6">
     <Services
       title="24H Service"
       desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"

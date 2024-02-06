@@ -1,4 +1,3 @@
-import { Image } from "astro:assets";
 import React from "react";
 
 const Services = ({title, desc, icon}) => {
