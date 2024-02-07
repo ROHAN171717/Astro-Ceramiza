@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets';
+
+const { name, desc, imgSrc } = Astro.props;
+---
+
+<div class="product-card-wrapper rounded-xl w-80 p-4 bg-cream">
+  <div class="text-center w-full p-1">
+    <h1 class="text-xl font-bold">{name}</h1>
+    <div class="text-lg mb-5">{desc}</div>
+    <a
+      href="/products"
+      class="border-2 border-black px-2 py-1 rounded font-bold"
+    >
+      View Products
+    </a>
+  </div>
+  <Image
+    src={imgSrc}
+    alt="demo"
+    class="rounded mt-5"
+    width={400}
+    height={300}
+  />
+</div>

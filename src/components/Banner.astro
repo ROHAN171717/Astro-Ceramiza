@@ -1,0 +1,13 @@
+---
+const { title, desc, variant } = Astro.props;
+---
+
+<div class="relative">
+  <div class={`banner-img ${variant}`}></div>
+  <div class="absolute banner-text text-right">
+    <div class="w-fit font-semibold mb-2 text-lg tracking-widest ml-auto">
+      {title}
+    </div>
+    <div class="w-fit font-semibold text-4xl tracking-wide">{desc}</div>
+  </div>
+</div>

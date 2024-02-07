@@ -1,19 +1,47 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Banner from "../components/Banner";
-import Accordian from "../components/Accordian";
+import Layout from '../layouts/Layout.astro';
+import Banner from '../components/Banner.astro';
+import Accordian from '../components/Accordian';
 ---
 
 <Layout title="FAQ">
-    <div class="section-wrapper mx-28 mt-16">
-        <Banner title="FAQ" desc="WE WILL BE HAPPY TO ANSWER ALL YOUR QUESTIONS" variant="img-2" />
-        <div class="pt-8">
-            <h1 class="text-3xl font-medium pb-4 border-b-2 border-stone-800 w-fit mb-4">GENERAL QUESTIONS</h1>
-            <Accordian title="What shipping methods are available?" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes." client:load />
-            <Accordian title="How long will it take to get my package?" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes." client:load />
-            <Accordian title="Do you ship internationally?" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes." client:load />
-            <Accordian title="Do I need an account to place an order?" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes." client:load />
-            <Accordian title="How do I schedule a service appointment?" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes." client:load />
-        </div>
+  <div class="section-wrapper mx-28 mt-16">
+    <Banner
+      title="FAQ"
+      desc="WE WILL BE HAPPY TO ANSWER ALL YOUR QUESTIONS"
+      variant="img-2"
+    />
+    <div class="pt-8">
+      <h1
+        class="text-3xl font-medium pb-4 border-b-2 border-stone-800 w-fit mb-4"
+      >
+        GENERAL QUESTIONS
+      </h1>
+      <Accordian
+        title="What shipping methods are available?"
+        content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+        client:load
+      />
+      <Accordian
+        title="How long will it take to get my package?"
+        content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+        client:load
+      />
+      <Accordian
+        title="Do you ship internationally?"
+        content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+        client:load
+      />
+      <Accordian
+        title="Do I need an account to place an order?"
+        content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+        client:load
+      />
+      <Accordian
+        title="How do I schedule a service appointment?"
+        content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+        client:load
+      />
     </div>
+  </div>
 </Layout>

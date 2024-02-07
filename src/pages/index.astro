@@ -1,25 +1,29 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import ProductCard from "../components/ProductCard";
-import Services from "../components/Services";
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import Services from '../components/Services.astro';
 ---
 
 <Layout title="Ceramiza - Home">
   <div class="section-wrapper flex flex-col items-center gap-4">
     <div class="bg-img"></div>
     <div class="mt-12 text-center absolute img-text font-bold">
-      <h1 class="text-6xl mb-4">
-        Every Touch Has Its Own Feelings
-      </h1>
+      <h1 class="text-6xl mb-4">Every Touch Has Its Own Feelings</h1>
       <h5 class="text-3xl">Welcome This Season with 50% OFF</h5>
-      <button class="bg-black text-white px-5 py-2 mt-2 rounded-xl">Shop Now</button>
+      <button class="bg-black text-white px-5 py-2 mt-2 rounded-xl"
+        >Shop Now</button
+      >
     </div>
   </div>
   <div class="px-28 pt-6">
-    <h1 class="text-3xl font-medium pb-4 border-b-2 border-stone-800 w-fit mb-4">
+    <h1
+      class="text-3xl font-medium pb-4 border-b-2 border-stone-800 w-fit mb-4"
+    >
       OUR PRODUCTS
     </h1>
-    <div class="grid gird-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div
+      class="grid gird-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+    >
       <ProductCard
         imgSrc="/images/product-images/img-8.jpg"
         name="Pottery Vase"
@@ -77,41 +81,42 @@ import Services from "../components/Services";
         luctus nec ullamcorper mattis, pulvinar dapibus leo.
       </div>
       <div class="flex gap-8 text-center">
-        <div>
-          <div class="text-3xl font-bold">15+</div>
-          <div class="text-xl">Years of Experience</div>
-        </div>
-        <div>
-          <div class="text-3xl font-bold">98%</div>
-          <div class="text-xl">Happy Customer</div>
-        </div>
-        <div>
-          <div class="text-3xl font-bold">1000+</div>
-          <div class="text-xl">Products Sold</div>
-        </div>
+        <div class="text-3xl font-bold">15+</div>
+        <div class="text-xl">Years of Experience</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold">98%</div>
+        <div class="text-xl">Happy Customer</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold">1000+</div>
+        <div class="text-xl">Products Sold</div>
       </div>
     </div>
   </div>
-  <div class="grid grid-cols-4 gap-16 px-28 mb-8 p-8" style="background-color: #ECE8E6">
-    <Services
-      title="24H Service"
-      desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
-      icon="/images/services-images/icon-1.png"
-    />
-    <Services
-      title="Free Returns"
-      desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
-      icon="/images/services-images/icon-2.png"
-    />
-    <Services
-      title="Secure Payment"
-      desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
-      icon="/images/services-images/icon-3.png"
-    />
-    <Services
-      title="Free Shipping"
-      desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
-      icon="/images/services-images/icon-4.png"
-    />
-  </div>
 </Layout>
+<div
+  class="grid grid-cols-4 gap-16 px-28 mb-8 p-8"
+  style="background-color: #ECE8E6"
+>
+  <Services
+    title="24H Service"
+    desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
+    icon="/images/services-images/icon-1.png"
+  />
+  <Services
+    title="Free Returns"
+    desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
+    icon="/images/services-images/icon-2.png"
+  />
+  <Services
+    title="Secure Payment"
+    desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
+    icon="/images/services-images/icon-3.png"
+  />
+  <Services
+    title="Free Shipping"
+    desc="Lorem ipsum dolor sit amet consectetur adipiscing elit dolor"
+    icon="/images/services-images/icon-4.png"
+  />
+</div>
