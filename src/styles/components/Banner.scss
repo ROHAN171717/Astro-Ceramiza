@@ -1,25 +1,26 @@
 .banner-img {
-    background:  no-repeat center;
-    background-size: cover;
-    height: calc(100vh - 112px);
-    opacity: 0.8;
+  background: no-repeat center;
+  background-size: cover;
+  background-color: #ece8e6;
+  height: calc(100vh - 112px);
+  opacity: 0.8;
 
-    &.img-1 {
-        background-image: url("/images/product-images/img-14.jpg");
-    }
+  &.img-1 {
+    background-image: url('/images/product-images/img-14.jpg');
+  }
 
-    &.img-2 {
-        background-image: url("/images/product-images/img-22.jpg");
-    }
+  &.img-2 {
+    background-image: url('/images/product-images/img-22.jpg');
+  }
 
-    &.img-3 {
-        background-image: url("/images/product-images/img-23.jpg");
-    }
+  &.img-3 {
+    background-image: url('/images/product-images/img-23.jpg');
+  }
 }
 
 .banner-text {
-    width: 45%;
-    top: 50%;
-    right: 50px;
-    transform: translateY(-50%);
+  width: 45%;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
 }
